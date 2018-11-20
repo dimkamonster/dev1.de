@@ -1,6 +1,6 @@
 #!/bin/sh
 prefix="/var/www/html/dev1.de/public_html/smtp_plug/mail/new"
-numPath="/var/www/html/dev1.de/public_html/mail"
+numPath="/var/www/html/dev1.de/public_html/smtp_plug/mail"
 
 if [ ! -f $numPath/num ]; then
     echo "0" > $numPath/num

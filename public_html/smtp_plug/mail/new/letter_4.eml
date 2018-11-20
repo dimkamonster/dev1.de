@@ -1,6 +1,0 @@
-To: dimkamonster@mail.ru
-Subject: Password reset
-X-PHP-Originating-Script: 1000:functions.php
-
-
-Hello!\nYou have requested a password change!\nSite adress: http://dev.dev/\n---------------------------\nLogin:    dimkamonster\nPassword reset link: http://dev.dev/index.php?action=reset&h=0b11ac0c716f3d0104f5885035ddb432\n---------------------------\nNote! Password reset link will be avaliable till 2013-12-03 03:27:19\n

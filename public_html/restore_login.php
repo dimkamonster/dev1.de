@@ -27,14 +27,15 @@ function validate_restore_login($allSubmitted){
 
 function restore_login() {
     $eml = trim($_POST['email']);
-    $email = mysql_real_escape_string($eml);
+    //$email = mysql_real_escape_string($eml);
+    $email = $eml;
     global $smarty;
     if (validate_restore_login($_POST) == "OK") {
         $sql = "SELECT login FROM ".mysqltable." WHERE email='".$email."';"; //check if email is exist
         require_once "functions.php";
         $result = db_query($sql);
         if ($result) {
-            while($row=mysql_fetch_array($result,MYSQL_BOTH)){
+            while($row=mysqli_fetch_array($result,MYSQLI_BOTH)){
                 $login = $row['login'];
             }
             if (isset($login)) {
