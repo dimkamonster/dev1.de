@@ -1,0 +1,6 @@
+To: dsa@ssw.re
+Subject: Thanks for registration!
+X-PHP-Originating-Script: 1000:functions.php
+
+
+Hello!nYou successfully register in dev.dev!nSite adress: http://dev.dev/nRegistration data:n---------------------------nLogin: ddddddddnPassword: 123qqnE-mail: dsa@ssw.renRegistration date: 11.30.13n---------------------------n

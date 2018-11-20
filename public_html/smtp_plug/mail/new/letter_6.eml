@@ -1,0 +1,6 @@
+To: dimkamonster@mail.ru
+Subject: You change password!
+X-PHP-Originating-Script: 1000:functions.php
+
+
+Hello!\nYou successfully change your password in dev.dev!\nSite adress: http://dev.dev/\nNew data:\n---------------------------\nLogin:    dimkamonster\nPassword: 12345q!\nE-mail:   dimkamonster@mail.ru\n---------------------------\n

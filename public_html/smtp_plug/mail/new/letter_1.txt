@@ -1,0 +1,6 @@
+To: _dmm@mail.ru
+Subject: subject
+X-PHP-Originating-Script: 1000:index.php
+
+
+message

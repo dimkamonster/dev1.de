@@ -1,0 +1,52 @@
+Create a Database
+http://www.w3schools.com/php/php_mysql_create.asp
+
+test
+http://www.ibm.com/developerworks/ru/edu/os-phptut1/section5.html
+
+
+connect to MySQL
+mysql -u sysadm -p
+L: root
+P: root
+
+
+linux
+L: vagrant
+P: vagrant
+
+comands to create table:
+mysql -u root -p
+root
+
+create database work;
+use work
+create table users (id int auto_increment primary key, login varchar(50), email varchar(255), password varchar(255), create_date DATETIME);
+alter table users add create_date DATETIME;
+
+create table remind (id int auto_increment primary key, login varchar(50), hash varchar(255), create_date DATETIME);
+
+GRANT ALL PRIVILEGES ON *.* TO 'wfuser'@'localhost' IDENTIFIED BY '12345q!' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'wfuser'@"%" IDENTIFIED BY '12345q!' WITH GRANT OPTION;
+
+vagrant@precise32:/home/deploy/dev_dev/current/public$ mysqldump --user=root --password=root --databases work > work1.sql
+mysql -u root -p databases < work1.sql
+
+
+sudo cp /home/deploy/dev_dev/current/public/smtp_plug/fakesendmail.sh /usr/bin/
+sudo apt-get install dos2unix
+sudo dos2unix /usr/bin/fakesendmail.sh
+
+sudo chmod -R 777 /home/deploy/dev_dev/current/public/smtp_plug/mail
+sudo chmod +x /usr/bin/fakesendmail.sh
+sudo chown root:root /usr/bin/fakesendmail.sh
+sudo chmod 755 /usr/bin/fakesendmail.sh
+sudo nano /etc/php5/fpm/php.ini
+sendmail_path = /usr/bin/fakesendmail.sh
+sudo service php5-fpm restart
+
+to make task for cron:
+select-editor  - to select editor for crontab
+crontab -e     - to add new tasks
+0 21 * * 0-6 sh /home/deploy/dev_dev/current/public/clean.sh  - run my shell-script to run php script
+

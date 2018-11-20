@@ -1,0 +1,58 @@
+To: qwe@www.com
+Subject: sssuuubbbjjj
+X-PHP-Originating-Script: 1000:index.php
+
+
+msg1
+ msg2
+ msg3
+To: qwe@www.com
+Subject: sssuuubbbjjj
+
+msg1
+ msg2
+ msg3
+To: dimkamonster@mail.ru
+Subject: Password reset
+
+Hello!
+You have requested a password change!
+Site adress: http://dev.dev/
+---------------------------
+Login:    dimkamonster
+Password reset link: http://dev1.de/index.php?action=reset&h=195fb8e3eb05c4062208ab98dc7f20e1
+---------------------------
+Note! Password reset link will be avaliable till 2018-11-18 15:03:41
+
+To: dimkamonster@mail.ru
+Subject: You change password!
+
+Hello!
+You successfully change your password in dev.dev!
+Site adress: http://dev.dev/
+New data:
+---------------------------
+Login:    dimkamonster
+Password: dimka123456m
+E-mail:   dimkamonster@mail.ru
+---------------------------
+
+To: site1@site1.com
+Subject: New release(s) available for site1
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8; format=flowed; delsp=yes
+Content-Transfer-Encoding: 8Bit
+X-Mailer: Drupal
+Sender: site1@site1.com
+From: site1 <site1@site1.com>
+
+There is a security update available for your version of Drupal. To ensure
+the security of your server, you should update immediately!
+
+See the available updates page for more information:
+http://site1.com/admin/reports/updates
+
+Your site is currently configured to send these emails when any updates are
+available. To get notified only for security updates,
+http://site1.com/admin/reports/updates/settings.
+
