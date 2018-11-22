@@ -67,7 +67,8 @@ function loginuser() {
             $_SESSION['email'] = $row['email'];
             $_SESSION['ip'] = $_SERVER['REMOTE_ADDR'];
             $_SESSION['admin'] = $row['rights'];
-            refresh_page_in_seconds();
+            header('Location: http://dev1.de');
+            //refresh_page_in_seconds();
         } else die("<br>Something is WRONG! <br>");
 
     }
