@@ -30,8 +30,10 @@ GRANT ALL PRIVILEGES ON *.* TO 'wfuser'@'localhost' IDENTIFIED BY '12345q!' WITH
 GRANT ALL PRIVILEGES ON *.* TO 'wfuser'@"%" IDENTIFIED BY '12345q!' WITH GRANT OPTION;
 
 vagrant@precise32:/home/deploy/dev_dev/current/public$ mysqldump --user=root --password=root --databases work > work1.sql
-mysql -u root -p databases < work1.sql
+mysqldump -u USER -pPASSWORD database_name | gzip > /path/to/database_name.sql.gz
 
+mysql -u root -p databases < work1.sql
+https://habr.com/ru/post/105954/
 
 sudo cp /home/deploy/dev_dev/current/public/smtp_plug/fakesendmail.sh /usr/bin/
 sudo apt-get install dos2unix
